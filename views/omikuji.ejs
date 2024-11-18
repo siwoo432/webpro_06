@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>おみくじ</title>
+</head>
+<body>
+    <h1>おみくじ</h1>
+    <p>あなたの運勢は <strong><%= un %></strong> です！</p>
+    <form action="/omikuji">
+        <button type="submit">もう一度引く</button>
+    </form>
+    <hr>
+    <nav>
+        <a href="/janken">じゃんけん</a> |
+        <a href="/number_guess">数当てゲーム</a>
+    </nav>
+</body>
+</html>
