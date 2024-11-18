@@ -2,11 +2,11 @@
 
 ## このプログラムについて
 
-じゃんけんのURL
+じゃんけんのURL  
 http://localhost:8080/janken
-おみくじのURL
+おみくじのURL  
 http://localhost:8080/omikuji
-数当てゲームのURL
+数当てゲームのURL  
 http://localhost:8080/number_guess
 
 ##　ファイル一覧
@@ -218,16 +218,16 @@ app.get("/number_guess", (req, res) => {
 });
 ```
 
-この部分について説明する.
-app.get("/number_guess", ...) によって /number_guess というルートを定義している.ユーザーが /number_guess にアクセスすると,この関数が実行される.
-req.query.number で,クエリパラメータとしてユーザーが入力した number の値を取得し,Number(...) によって,数値型に変換する.
-Math.random() * 10 で 0〜9.999... の範囲の小数が生成され,それを Math.floor(...) で切り捨て,最後に + 1 することで,1〜10の範囲のランダムな整数 target が得られる.
-result は,ユーザーに表示するメッセージを保持する変数である.
-if (!isNaN(user)) で,ユーザー入力が数値かどうかを確認する.
+この部分について説明する.  
+app.get("/number_guess", ...) によって /number_guess というルートを定義している.ユーザーが /number_guess にアクセスすると,この関数が実行される.  
+req.query.number で,クエリパラメータとしてユーザーが入力した number の値を取得し,Number(...) によって,数値型に変換する.  
+Math.random() * 10 で 0〜9.999... の範囲の小数が生成され,それを Math.floor(...) で切り捨て,最後に + 1 することで,1〜10の範囲のランダムな整数 target が得られる.  
+result は,ユーザーに表示するメッセージを保持する変数である.  
+if (!isNaN(user)) で,ユーザー入力が数値かどうかを確認する.  
 if (user === target) では,ユーザーの入力値とターゲットナンバーが等しいかを判定し,正解なら result に"正解!"というメッセージを設定する.
 不正解の場合は,"不正解！正解は(正解の数字)"が result に設定される.
 res.render(...) で,number_guess.ejs テンプレートが表示される.
-{ result } によって,テンプレートに result の値が渡され,数当ての結果メッセージが表示される.
+{ result } によって,テンプレートに result の値が渡され,数当ての結果メッセージが表示される.  
 
 ```mermaid
 flowchart TD;
@@ -237,6 +237,6 @@ flowchart TD;
   B -->|不一致| D["不正解！正解は(正解の数字)を表示"] --> 終了;
 ```
 
-起動方法
+起動方法  
 適切なディレクトリで node app5.js でサーバを起動する.
 次に最初に示したURLを開くと起動できる.
