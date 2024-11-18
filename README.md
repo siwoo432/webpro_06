@@ -99,9 +99,9 @@ app.get("/number_guess", (req, res) => {
 
   if (!isNaN(userNumber)) {
     if (userNumber === targetNumber) {
-      result = "おめでとう！正解です！";
+      result = "正解！";
     } else {
-      result = `残念！正解は ${targetNumber} でした.`;
+      result = `不正解！正解は ${targetNumber} `;
     }
   }
 
