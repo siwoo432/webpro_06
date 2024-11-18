@@ -3,11 +3,11 @@
 ## このプログラムについて
 
 じゃんけんのURL  
-http://localhost:8080/janken
+http://localhost:8080/janken  
 おみくじのURL  
-http://localhost:8080/omikuji
+http://localhost:8080/omikuji  
 数当てゲームのURL  
-http://localhost:8080/number_guess
+http://localhost:8080/number_guess  
 
 ##　ファイル一覧
 
