@@ -16,7 +16,7 @@ http://localhost:8080/number_guess
 app5.js | プログラム本体
 janken | じゃんけんの開始画面
 omikuji | おみくじの開始画面
-janken | 数当てゲームの開始画面
+number_guess | 数当てゲームの開始画面
 
 app5.js
 
